@@ -1,0 +1,1942 @@
+/* Learning-first refinements. Canvas, controls, and explanation keep separate roles. */
+:root {
+  --guide-bg: #f8faf5;
+  --canvas-bg: #ffffff;
+  --accent-soft: #edf4e4;
+}
+[data-theme="dark"] {
+  --guide-bg: #223025;
+  --canvas-bg: #202d24;
+  --accent-soft: #34492e;
+}
+.main-content {
+  padding-top: 34px;
+}
+.hero h1 {
+  font-size: clamp(38px, 3.6vw, 57px);
+  letter-spacing: -1.8px;
+}
+.hero-copy > p {
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 470px;
+}
+.hero .eyebrow {
+  font-size: 10px;
+  letter-spacing: 1.3px;
+}
+.hero-actions .button {
+  font-size: 12px;
+  padding: 14px 18px;
+}
+.hero-actions > span {
+  font-size: 10px;
+  max-width: 115px;
+}
+.hero-facts {
+  font-size: 10px;
+}
+.hero-demo {
+  transform: none;
+  border-radius: 16px;
+}
+.hero-demo .plot {
+  min-height: 225px;
+}
+.demo-bar > span:first-child {
+  font-size: 10px;
+}
+.demo-bottom small,
+.demo-bottom code {
+  font-size: 11px;
+}
+.live-label {
+  font-size: 8px;
+}
+.section-title h2 {
+  font-size: 28px;
+}
+.section-title .eyebrow {
+  font-size: 10px;
+}
+.section-title > .muted {
+  font-size: 12px;
+}
+.filter-row button {
+  font-size: 12px;
+  padding: 10px 14px;
+}
+.lab-card {
+  border-radius: 13px;
+  padding: 22px 22px 0;
+}
+.lab-card h3 {
+  font-size: 20px;
+  line-height: 1.4;
+  min-height: 0;
+}
+.lab-card > p {
+  font-size: 12px;
+  line-height: 1.65;
+  min-height: 0;
+}
+.card-level {
+  font-size: 10px;
+}
+.card-art {
+  height: 123px;
+}
+.card-footer > span {
+  font-size: 10px;
+}
+.card-footer {
+  padding: 15px 0;
+}
+.nav-label {
+  font-size: 10px;
+}
+.sidebar nav button {
+  font-size: 14px;
+  padding: 13px;
+  min-height: 46px;
+}
+.sidebar-course p {
+  font-size: 12px;
+}
+.global-search input {
+  font-size: 12px;
+}
+.breadcrumb {
+  font-size: 12px;
+}
+.start-here {
+  padding: 27px 0 30px;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 25px;
+  align-items: center;
+}
+.start-here .eyebrow {
+  font-size: 9px;
+}
+.start-here h2 {
+  font-size: 22px;
+  margin: 7px 0 10px;
+}
+.start-here p {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.starter-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.starter-steps > button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 19px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--paper);
+  text-align: left;
+  min-width: 0;
+  transition:
+    border-color 0.15s,
+    transform 0.15s;
+}
+.starter-steps > button:hover {
+  border-color: #a2b88b;
+  transform: translateY(-2px);
+}
+.starter-steps > button > span {
+  font:
+    12px ui-monospace,
+    monospace;
+  color: var(--muted);
+  align-self: start;
+  margin-top: 2px;
+}
+.starter-steps strong {
+  font-size: 12px;
+  font-weight: 550;
+  display: block;
+  line-height: 1.5;
+}
+.starter-steps small {
+  font-size: 10px;
+  color: var(--muted);
+  display: block;
+  margin-top: 6px;
+  line-height: 1.5;
+}
+.starter-steps svg {
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.lab-mode .sidebar {
+  width: 76px;
+  padding: 24px 12px;
+}
+.lab-mode .brand {
+  padding: 0 6px 34px;
+  justify-content: center;
+}
+.lab-mode .brand > span:last-child,
+.lab-mode .nav-label,
+.lab-mode .sidebar nav button > span,
+.lab-mode .sidebar nav button > small,
+.lab-mode .sidebar-course,
+.lab-mode .sidebar-bottom > div {
+  display: none;
+}
+.lab-mode .sidebar nav {
+  gap: 9px;
+}
+.lab-mode .sidebar nav button {
+  justify-content: center;
+  padding: 13px;
+  position: relative;
+}
+.lab-mode .sidebar-bottom > button {
+  font-size: 0;
+  justify-content: center;
+  padding: 13px;
+}
+.lab-mode .app-body {
+  margin-left: 76px;
+}
+.lab-mode .toast {
+  left: calc(50% + 38px);
+}
+.lab-mode .main-content {
+  max-width: 1900px;
+  padding: 29px 28px;
+}
+.lab-mode .topbar {
+  padding-inline: 28px;
+}
+.lab-page-heading h1 {
+  font-size: 37px;
+  letter-spacing: -1.1px;
+}
+.lab-page-heading p {
+  font-size: 14px;
+}
+.lab-page-heading .eyebrow {
+  font-size: 10px;
+}
+.back-link {
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+.lab-kind {
+  font-size: 11px;
+  margin-top: 15px;
+}
+.lab-header-actions .button {
+  font-size: 12px;
+}
+.lab-header-actions .icon-button {
+  height: 41px;
+  width: 41px;
+}
+.workspace-orientation {
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+  margin: 19px 0 0;
+  max-width: 900px;
+  color: var(--muted);
+}
+.workspace-orientation > svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+  color: var(--green);
+}
+.workspace-orientation p {
+  font-size: 12px;
+  line-height: 1.8;
+}
+.workspace-orientation strong {
+  color: var(--ink);
+  font-weight: 550;
+}
+.prereq-bar {
+  font-size: 11px;
+  border: 0;
+  background: none;
+  padding: 0;
+  margin-top: 15px;
+}
+.prereq-bar button {
+  font-size: 11px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.workspace-tabs {
+  gap: 32px;
+  margin-top: 19px;
+  margin-bottom: 24px;
+}
+.workspace-tabs > button {
+  font-size: 13px;
+  padding: 15px 0;
+  font-weight: 500;
+}
+.workspace-tabs > button.active {
+  font-weight: 600;
+}
+.lab-grid {
+  grid-template-columns: 210px minmax(0, 1fr);
+  overflow: visible;
+  align-items: start;
+  box-shadow: 0 4px 25px #20382404;
+  border-radius: 13px;
+}
+.lab-grid.with-guide {
+  grid-template-columns: 210px minmax(330px, 1fr) 282px;
+}
+.lab-grid > .controls-panel {
+  grid-column: 1;
+  grid-row: 1;
+  display: block;
+  border-left: 0;
+  border-right: 1px solid var(--line);
+  padding: 23px 18px;
+  border-radius: 13px 0 0 13px;
+  align-self: stretch;
+  background: var(--sidebar);
+}
+.lab-grid > .visual-panel {
+  grid-column: 2;
+  grid-row: 1;
+  padding: 20px 22px 0;
+  min-width: 0;
+  background: var(--canvas-bg);
+  border-radius: 0;
+  align-self: start;
+}
+.controls-panel .panel-heading {
+  font-size: 12px;
+  gap: 8px;
+  margin-bottom: 29px;
+}
+.control {
+  font-size: 12px;
+  margin-bottom: 27px;
+}
+.control-label {
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+.control-label output {
+  font-size: 11px;
+  min-width: 40px;
+}
+.control > label {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.control select,
+.text-control input {
+  font-size: 12px;
+  padding: 10px 9px;
+}
+.control-help {
+  font-size: 11px;
+  line-height: 1.75;
+}
+.controls-panel h3 {
+  font-size: 11px;
+  line-height: 1.7;
+  margin: 23px 0 16px;
+}
+.toggle-label {
+  font-size: 12px;
+  line-height: 1.6;
+  gap: 13px;
+}
+.toggle-label input {
+  height: 18px;
+  width: 18px;
+  flex-shrink: 0;
+}
+.text-control {
+  font-size: 12px;
+  line-height: 1.6;
+}
+.text-control input {
+  min-width: 0;
+}
+.playback {
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 25px 0 18px;
+}
+.playback .button {
+  font-size: 11px;
+  padding: 10px 12px;
+  min-height: 36px;
+}
+.playback .icon-button {
+  height: 36px;
+  width: 31px;
+}
+.controls-panel > .button {
+  font-size: 11px;
+  white-space: normal;
+  line-height: 1.5;
+}
+.canvas-mode {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 10px;
+  color: var(--green);
+  margin-bottom: 27px;
+  flex-wrap: wrap;
+}
+.canvas-mode > span:last-child {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 9px;
+}
+.status-dot.paused {
+  background: #b79b65;
+}
+.viz-heading > span:first-child {
+  font-size: 9px;
+  line-height: 1.6;
+  letter-spacing: 1.1px;
+}
+.viz-heading .tag {
+  font-size: 9px;
+}
+.plot {
+  min-height: 250px;
+}
+.metrics {
+  padding: 22px 0;
+  margin-top: 20px;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  row-gap: 22px;
+}
+.metrics > div {
+  border: 0;
+  padding-left: 0;
+}
+.metrics span {
+  font-size: 10px;
+  line-height: 1.6;
+  margin-bottom: 6px;
+  min-height: 0;
+}
+.metrics strong {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+.loss-chart {
+  height: 110px;
+}
+.svg-label {
+  font-size: 10px;
+}
+.plot-legend {
+  font-size: 11px;
+}
+.prediction > span {
+  font-size: 10px;
+}
+.prediction > strong {
+  font-size: 19px;
+}
+.prediction small {
+  font-size: 8px;
+}
+.neuron-label {
+  font-size: 10px;
+}
+.prob-bars > div > span {
+  font-size: 12px;
+  width: 85px;
+}
+.prob-bars > div > strong {
+  font-size: 11px;
+}
+.bar-track {
+  height: 24px;
+}
+.draws p {
+  font-size: 12px;
+}
+.draws > div > span {
+  font-size: 11px;
+}
+.retrieval-list > article > div {
+  font-size: 11px;
+}
+.retrieval-list p {
+  font-size: 12px;
+}
+.pipeline-strip span {
+  font-size: 9px;
+}
+.pipeline-strip strong {
+  font-size: 24px;
+}
+.agent-stage strong {
+  font-size: 11px;
+}
+.agent-stage .eyebrow {
+  font-size: 8px;
+}
+.agent-flow {
+  gap: 11px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+.agent-stage {
+  flex: 1 1 80px;
+}
+.agent-stage:after {
+  display: none;
+}
+.agent-state {
+  font-size: 12px;
+}
+.agent-state p {
+  font-size: 12px;
+}
+.q-grid {
+  max-width: 400px;
+}
+.q-grid button small {
+  font-size: 9px;
+}
+.q-grid button strong {
+  font-size: 23px;
+}
+.system-flow {
+  margin: 40px 0;
+  gap: 10px;
+}
+.system-flow > div {
+  padding: 18px 9px;
+  min-width: 0;
+}
+.system-flow > div strong {
+  font-size: 11px;
+}
+.system-flow > div small {
+  font-size: 10px;
+}
+.system-flow > svg {
+  width: 14px;
+}
+.capacity-panel p {
+  font-size: 12px;
+}
+.matrix-composition {
+  gap: 7px;
+}
+.matrix span {
+  font-size: 10px;
+}
+.matrix-wrap > .eyebrow {
+  font-size: 9px;
+}
+.lab-note {
+  font-size: 11px;
+  line-height: 1.8;
+}
+.below-lab p {
+  font-size: 13px;
+}
+.concept-guide {
+  grid-column: 3;
+  grid-row: 1;
+  border-left: 1px solid var(--line);
+  padding: 23px 22px;
+  background: var(--guide-bg);
+  border-radius: 0 13px 13px 0;
+  position: sticky;
+  top: 18px;
+  max-height: calc(100vh - 36px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  align-self: start;
+}
+.guide-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 17px;
+}
+.guide-title .eyebrow {
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+.guide-bookmark {
+  font:
+    10px ui-monospace,
+    monospace;
+  border: 1px solid var(--line);
+  padding: 4px 6px;
+  border-radius: 4px;
+  color: var(--muted);
+}
+.concept-guide h2 {
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: -0.7px;
+  margin-bottom: 13px;
+}
+.guide-summary {
+  font-size: 12px;
+  line-height: 1.85;
+  color: var(--muted);
+}
+.live-insight {
+  border: 1px solid #cfdcbf;
+  background: var(--accent-soft);
+  border-radius: 9px;
+  padding: 15px;
+  margin: 20px 0;
+}
+.live-insight .eyebrow {
+  font-size: 8px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--green);
+}
+.live-insight p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-top: 9px;
+}
+.guide-details {
+  padding: 15px 0;
+  border-top: 1px solid var(--line);
+}
+.guide-details summary {
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 1.6;
+}
+.guide-details p {
+  font-size: 12px;
+  line-height: 1.85;
+  color: var(--muted);
+  margin-top: 11px;
+}
+.concept-flow {
+  display: block;
+  width: 100%;
+  margin: 16px 0 20px;
+  max-width: 280px;
+}
+.guide-details dl {
+  margin: 15px 0 0;
+}
+.guide-details dl > div {
+  margin-bottom: 14px;
+}
+.guide-details dl > div:last-child {
+  margin-bottom: 2px;
+}
+.guide-details dt {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+.guide-details dd {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.85;
+  margin: 4px 0 0;
+}
+.guide-try {
+  padding: 15px 0;
+  margin-bottom: 12px;
+  border-top: 1px solid var(--line);
+}
+.guide-try .eyebrow {
+  font-size: 9px;
+}
+.guide-try p {
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin-top: 9px;
+}
+.concept-guide > .button {
+  font-size: 11px;
+  margin-bottom: 3px;
+  white-space: normal;
+  justify-content: space-between;
+  line-height: 1.5;
+}
+.guide-toggle {
+  display: none;
+}
+.document-editor summary,
+.document-editor textarea {
+  font-size: 13px;
+}
+.document-editor summary span {
+  font-size: 10px;
+}
+.document-editor pre {
+  font-size: 12px;
+}
+.upload-label {
+  font-size: 11px;
+}
+.trace-panel li p {
+  font-size: 11px;
+}
+.trace-panel li strong {
+  font-size: 12px;
+}
+.parameter-inspector {
+  font-size: 12px;
+}
+.parameter-inspector p {
+  font-size: 11px;
+  line-height: 1.8;
+}
+.parameter-table table {
+  font-size: 10px;
+}
+.inline-explanation {
+  font-size: 12px;
+}
+.token {
+  font-size: 12px;
+}
+.token small {
+  font-size: 10px;
+}
+.attention-matrix button {
+  font-size: 10px;
+}
+.attention-labels > button {
+  font-size: 10px;
+}
+.output-vector {
+  font-size: 11px;
+}
+.segmented > button {
+  font-size: 12px;
+}
+.detailed-lesson {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.lesson-cover {
+  padding: 35px 40px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: var(--paper);
+}
+.lesson-cover .eyebrow {
+  font-size: 10px;
+}
+.lesson-cover h2 {
+  font-size: 38px;
+  line-height: 1.2;
+  margin: 15px 0 20px;
+}
+.lesson-cover > p {
+  max-width: 800px;
+  font-size: 17px;
+  line-height: 1.85;
+  color: var(--muted);
+}
+.learning-objectives {
+  margin-top: 26px;
+  padding: 21px 24px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--guide-bg);
+  max-width: 850px;
+}
+.learning-objectives h3 {
+  font-size: 14px;
+  letter-spacing: 0;
+}
+.learning-objectives ul {
+  padding-left: 19px;
+  margin: 12px 0 0;
+  font-size: 13px;
+  line-height: 2;
+  color: var(--muted);
+}
+.lesson-reading-layout {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 45px;
+  padding-top: 35px;
+}
+.lesson-toc {
+  align-self: start;
+  position: sticky;
+  top: 25px;
+  display: grid;
+  gap: 16px;
+  padding: 7px 0;
+}
+.lesson-toc .eyebrow {
+  font-size: 9px;
+  margin-bottom: 3px;
+}
+.lesson-toc > a {
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--muted);
+  text-decoration: none;
+  padding-left: 12px;
+  border-left: 2px solid var(--line);
+}
+.lesson-toc > a:hover {
+  color: var(--green);
+  border-color: var(--green);
+}
+.lesson-toc .button {
+  margin-top: 15px;
+  font-size: 10px;
+}
+.lesson-body {
+  max-width: 800px;
+  min-width: 0;
+}
+.lesson-body > section {
+  margin-bottom: 37px;
+  scroll-margin-top: 30px;
+}
+.lesson-body h3 {
+  font-size: 23px;
+  line-height: 1.45;
+  margin-bottom: 17px;
+  letter-spacing: -0.5px;
+}
+.lesson-body p {
+  font-size: 15px;
+  line-height: 1.95;
+  color: var(--muted);
+  margin: 0 0 15px;
+}
+.lesson-body .formula {
+  font-size: 14px;
+  white-space: pre-wrap;
+  line-height: 2;
+  margin-top: 20px;
+}
+.lesson-body .lesson-flow-intro {
+  padding: 24px 28px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.lesson-flow-intro h3 {
+  font-size: 17px;
+}
+.lesson-flow-intro .concept-flow {
+  max-width: 360px;
+  margin: 20px auto 5px;
+}
+.worked-example {
+  padding: 27px 28px;
+  border: 1px solid #ccd9ba;
+  border-radius: 10px;
+  background: var(--accent-soft);
+}
+.worked-example h3 {
+  font-size: 22px;
+  margin-top: 12px;
+}
+.worked-example ol {
+  padding-left: 23px;
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--muted);
+}
+.worked-example li {
+  margin-bottom: 12px;
+  padding-left: 3px;
+}
+.worked-example .worked-result {
+  border-top: 1px solid #cbd8b9;
+  padding-top: 16px;
+  color: var(--ink);
+  font-weight: 500;
+  margin: 18px 0 0;
+}
+.lesson-failure {
+  border-left: 3px solid #ba9e76;
+  padding: 4px 0 4px 22px;
+}
+.lesson-body .lesson-failure h3 {
+  font-size: 19px;
+}
+.lesson-body .lesson-failure p {
+  font-size: 14px;
+  margin: 0;
+}
+.lesson-body .button {
+  font-size: 12px;
+}
+.lesson-references {
+  border-top: 1px solid var(--line);
+  padding-top: 27px;
+}
+.lesson-references > p {
+  font-size: 12px;
+}
+.lesson-references > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 12px;
+  line-height: 1.8;
+  text-decoration: none;
+}
+.lesson-references > a:hover {
+  text-decoration: underline;
+}
+.lesson-references small {
+  font-size: 9px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.lesson-next {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 26px 0 35px;
+  border-top: 1px solid var(--line);
+}
+.lesson-next p {
+  font-size: 12px;
+  margin: 9px 0 0;
+}
+.lesson-next .eyebrow {
+  font-size: 9px;
+}
+.knowledge-check {
+  max-width: 830px;
+  padding: 40px;
+}
+.knowledge-check h2 {
+  line-height: 1.5;
+}
+.answer-options label {
+  font-size: 14px;
+  padding: 21px;
+}
+.answer-feedback p {
+  font-size: 14px;
+}
+.path-card > p {
+  font-size: 12px;
+}
+.path-card h2 {
+  font-size: 22px;
+}
+.page-title p {
+  font-size: 14px;
+}
+.site-footer {
+  font-size: 10px;
+}
+.path-banner p {
+  font-size: 12px;
+}
+.path-banner .eyebrow {
+  font-size: 9px;
+}
+.path-banner .button {
+  font-size: 11px;
+}
+@media (min-width: 1700px) {
+  .lab-grid.with-guide {
+    grid-template-columns: 230px minmax(0, 1fr) 310px;
+  }
+  .lab-mode .main-content {
+    padding-inline: 40px;
+  }
+  .concept-guide {
+    padding: 27px;
+  }
+  .visual-panel .plot {
+    min-height: 330px;
+  }
+  .metrics {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .metrics strong {
+    font-size: 24px;
+  }
+  .guide-summary,
+  .live-insight p,
+  .guide-details p,
+  .guide-try p {
+    font-size: 13px;
+  }
+  .guide-details dd {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1250px) {
+  .start-here {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .start-here > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .start-here > div:first-child p {
+    flex-basis: 100%;
+  }
+  .start-here h2 {
+    margin: 0;
+  }
+  .lab-grid.with-guide {
+    grid-template-columns: 190px minmax(270px, 1fr) 252px;
+  }
+  .lab-grid > .controls-panel {
+    padding: 22px 15px;
+  }
+  .lab-grid > .visual-panel {
+    padding: 20px 17px 0;
+  }
+  .concept-guide {
+    padding: 22px 18px;
+  }
+  .concept-guide h2 {
+    font-size: 21px;
+  }
+  .control-label {
+    font-size: 11px;
+  }
+  .playback .button {
+    padding: 10px;
+    font-size: 10px;
+  }
+  .canvas-mode > span:last-child {
+    font-size: 8px;
+  }
+  .metrics strong {
+    font-size: 20px;
+  }
+  .hero h1 {
+    font-size: 43px;
+  }
+  .hero-copy > p {
+    font-size: 13px;
+  }
+  .lab-card {
+    padding: 18px 18px 0;
+  }
+  .lab-card h3 {
+    font-size: 18px;
+  }
+  .card-footer > span {
+    font-size: 9px;
+  }
+  .card-art {
+    height: 110px;
+  }
+  .lab-mode .main-content {
+    padding-inline: 22px;
+  }
+  .lesson-reading-layout {
+    gap: 30px;
+    grid-template-columns: 190px minmax(0, 1fr);
+  }
+}
+@media (max-width: 1080px) {
+  .lab-grid.with-guide {
+    grid-template-columns: 205px minmax(0, 1fr);
+  }
+  .lab-grid.with-guide > .concept-guide {
+    grid-column: 1/-1;
+    grid-row: 1;
+    position: static;
+    max-height: none;
+    border-left: 0;
+    border-bottom: 1px solid var(--line);
+    border-radius: 13px 13px 0 0;
+    padding: 23px 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 25px;
+  }
+  .lab-grid.with-guide > .controls-panel {
+    grid-column: 1;
+    grid-row: 2;
+    border-radius: 0 0 0 13px;
+  }
+  .lab-grid.with-guide > .visual-panel {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .guide-title {
+    grid-column: 1;
+    margin-bottom: 12px;
+  }
+  .concept-guide h2 {
+    grid-column: 1;
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+  .guide-summary {
+    grid-column: 1;
+    font-size: 12px;
+    line-height: 1.75;
+  }
+  .live-insight {
+    grid-column: 2;
+    grid-row: 1/4;
+    margin: 0;
+    align-self: start;
+  }
+  .guide-toggle {
+    display: flex;
+    grid-column: 1/-1;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11px;
+    line-height: 1.8;
+    text-align: left;
+    color: var(--green);
+    padding: 13px 0 8px;
+    margin-top: 12px;
+    border-top: 1px solid var(--line);
+  }
+  .guide-extras {
+    grid-column: 1/-1;
+    display: none;
+  }
+  .concept-guide.expanded .guide-extras {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 25px;
+    padding-top: 10px;
+  }
+  .concept-guide.expanded .guide-details {
+    border-top: 0;
+  }
+  .guide-try {
+    margin-top: 10px;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .guide-details dl {
+    margin-top: 12px;
+  }
+  .guide-extras .concept-flow {
+    grid-column: 2;
+    grid-row: 1;
+    max-width: 260px;
+    margin: 15px auto;
+  }
+  .concept-guide > .button {
+    grid-column: 1/-1;
+    width: max-content;
+    margin-top: 7px;
+    gap: 22px;
+    background: transparent;
+    border: 0;
+    padding: 5px 0;
+    color: var(--green);
+    box-shadow: none;
+  }
+  .guide-details dd {
+    font-size: 12px;
+  }
+  .hero h1 {
+    font-size: 42px;
+  }
+  .hero .desktop-break {
+    display: none;
+  }
+  .hero-demo .plot {
+    min-height: 200px;
+  }
+  .card-art {
+    height: 105px;
+  }
+  .section-title h2 {
+    font-size: 25px;
+  }
+  .path-banner h2 {
+    font-size: 21px;
+  }
+  .lesson-cover {
+    padding: 30px;
+  }
+  .lesson-reading-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .lesson-toc {
+    position: static;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 13px 20px;
+    border-bottom: 1px solid var(--line);
+    padding: 0 0 24px;
+  }
+  .lesson-toc > .eyebrow {
+    grid-column: 1/-1;
+  }
+  .lesson-toc > .button {
+    margin-top: 0;
+    grid-column: 1/-1;
+    width: fit-content;
+  }
+  .lesson-body {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  .lesson-body p {
+    font-size: 15px;
+  }
+  .lesson-cover h2 {
+    font-size: 34px;
+  }
+  .canvas-mode > span:last-child {
+    font-size: 9px;
+  }
+}
+@media (max-width: 700px) {
+  .lab-mode .sidebar {
+    width: 230px;
+    padding: 30px 18px 20px;
+  }
+  .lab-mode .brand {
+    justify-content: start;
+    padding: 0 10px 42px;
+  }
+  .lab-mode .brand > span:last-child,
+  .lab-mode .nav-label,
+  .lab-mode .sidebar nav button > span,
+  .lab-mode .sidebar nav button > small,
+  .lab-mode .sidebar-course {
+    display: initial;
+  }
+  .lab-mode .sidebar-bottom > div {
+    display: flex;
+  }
+  .lab-mode .sidebar nav {
+    gap: 5px;
+  }
+  .lab-mode .sidebar nav button {
+    justify-content: start;
+  }
+  .lab-mode .sidebar-bottom > button {
+    font-size: 13px;
+    justify-content: start;
+  }
+  .lab-mode .app-body {
+    margin-left: 0;
+  }
+  .lab-mode .toast {
+    left: 50%;
+  }
+  .lab-mode .topbar {
+    padding-inline: 16px;
+  }
+  .lab-mode .main-content,
+  .main-content {
+    padding: 24px 16px;
+  }
+  .hero h1 {
+    font-size: 39px;
+  }
+  .hero-copy > p {
+    font-size: 13px;
+  }
+  .hero .eyebrow {
+    font-size: 8px;
+  }
+  .hero-actions .button {
+    font-size: 11px;
+    padding: 13px 15px;
+  }
+  .hero-actions > span {
+    font-size: 9px;
+  }
+  .hero-facts {
+    font-size: 9px;
+    gap: 16px;
+  }
+  .hero-demo .plot {
+    min-height: 170px;
+  }
+  .demo-bar > span:first-child {
+    font-size: 9px;
+  }
+  .hero-facts {
+    flex-wrap: wrap;
+  }
+  .start-here {
+    padding: 25px 0;
+  }
+  .start-here > div:first-child {
+    display: block;
+  }
+  .start-here h2 {
+    font-size: 22px;
+    margin: 8px 0 10px;
+  }
+  .starter-steps {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .starter-steps > button {
+    padding: 17px;
+  }
+  .starter-steps strong {
+    font-size: 13px;
+  }
+  .starter-steps small {
+    font-size: 11px;
+    margin-top: 4px;
+  }
+  .starter-steps > button > span {
+    margin-top: 3px;
+    font-size: 13px;
+  }
+  .section-title {
+    align-items: center;
+  }
+  .section-title h2 {
+    font-size: 23px;
+  }
+  .section-title .eyebrow {
+    font-size: 8px;
+  }
+  .section-title > .muted {
+    font-size: 10px;
+  }
+  .lab-cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .lab-card {
+    padding: 22px 22px 0;
+    display: grid;
+    grid-template-columns: 1fr 95px;
+    column-gap: 15px;
+  }
+  .lab-card .card-top {
+    grid-column: 1/-1;
+  }
+  .card-art {
+    grid-column: 2;
+    grid-row: 2/4;
+    height: 105px;
+    margin: 0 -5px 0 0;
+  }
+  .card-art svg {
+    height: 100px;
+    width: 100%;
+  }
+  .lab-card h3 {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 19px;
+    margin-top: 22px;
+    align-self: end;
+    min-height: 0;
+  }
+  .lab-card > p {
+    grid-column: 1;
+    grid-row: 3;
+    font-size: 12px;
+    margin: 8px 0 20px;
+    align-self: start;
+    min-height: 0;
+  }
+  .card-footer {
+    grid-column: 1/-1;
+  }
+  .card-footer > span {
+    font-size: 10px;
+  }
+  .card-footer > span > svg {
+    display: inline;
+  }
+  .card-level {
+    font-size: 9px;
+  }
+  .card-icon {
+    height: 34px;
+    width: 34px;
+  }
+  .card-icon svg {
+    height: 20px;
+    width: 20px;
+  }
+  .lab-page-heading h1 {
+    font-size: 31px;
+  }
+  .lab-page-heading p {
+    font-size: 13px;
+  }
+  .lab-page-heading .eyebrow {
+    font-size: 9px;
+    line-height: 1.8;
+  }
+  .lab-header-actions .button {
+    font-size: 11px;
+  }
+  .back-link {
+    font-size: 11px;
+  }
+  .lab-kind {
+    font-size: 10px;
+    line-height: 1.7;
+    flex-wrap: wrap;
+  }
+  .lab-kind > span:last-child {
+    font-size: 10px;
+  }
+  .workspace-orientation {
+    margin-top: 16px;
+    gap: 9px;
+  }
+  .workspace-orientation p {
+    font-size: 11px;
+  }
+  .workspace-tabs {
+    gap: 22px;
+    margin-top: 14px;
+    margin-bottom: 18px;
+  }
+  .workspace-tabs > button {
+    font-size: 11px;
+    min-height: 48px;
+    padding: 15px 0;
+  }
+  .prereq-bar {
+    font-size: 10px;
+    line-height: 1.8;
+  }
+  .prereq-bar button {
+    font-size: 10px;
+  }
+  .lab-grid,
+  .lab-grid.with-guide {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .lab-grid.with-guide > .concept-guide {
+    grid-column: 1;
+    grid-row: 1;
+    display: block;
+    padding: 21px;
+  }
+  .guide-title {
+    margin-bottom: 10px;
+  }
+  .concept-guide h2 {
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+  .guide-summary {
+    font-size: 12px;
+  }
+  .live-insight {
+    margin: 17px 0 0;
+    padding: 14px;
+  }
+  .live-insight p {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+  .live-insight .eyebrow {
+    font-size: 8px;
+  }
+  .guide-toggle {
+    font-size: 11px;
+    width: 100%;
+    margin-top: 16px;
+  }
+  .concept-guide > .button {
+    font-size: 11px;
+    margin-top: 4px;
+    gap: 15px;
+    width: 100%;
+    justify-content: start;
+  }
+  .concept-guide.expanded .guide-extras {
+    display: block;
+  }
+  .guide-extras .concept-flow {
+    max-width: 240px;
+  }
+  .guide-details summary {
+    font-size: 12px;
+  }
+  .guide-details p {
+    font-size: 12px;
+  }
+  .guide-try p {
+    font-size: 12px;
+  }
+  .lab-grid > .visual-panel,
+  .lab-grid.with-guide > .visual-panel {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 20px 15px 0;
+  }
+  .lab-grid > .controls-panel,
+  .lab-grid.with-guide > .controls-panel {
+    grid-column: 1;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 22px;
+    border: 0;
+    border-top: 1px solid var(--line);
+    border-radius: 0 0 13px 13px;
+    padding: 22px;
+  }
+  .controls-panel > .panel-heading,
+  .controls-panel > .control-help,
+  .controls-panel > h3 {
+    grid-column: 1/-1;
+  }
+  .controls-panel .control {
+    margin-bottom: 16px;
+  }
+  .controls-panel > .toggle-label {
+    margin: 8px 0 18px;
+  }
+  .controls-panel > .playback {
+    grid-column: 1/-1;
+    margin: 8px 0 12px;
+  }
+  .controls-panel > .button {
+    margin: 0;
+    align-self: start;
+  }
+  .controls-panel .panel-heading {
+    font-size: 13px;
+    margin-bottom: 13px;
+  }
+  .control {
+    font-size: 12px;
+  }
+  .control-label {
+    font-size: 11px;
+    margin-bottom: 16px;
+    gap: 7px;
+  }
+  .control-label output {
+    font-size: 10px;
+    padding: 4px 5px;
+    min-width: 35px;
+  }
+  .control > label,
+  .text-control {
+    font-size: 11px;
+  }
+  .control select,
+  .text-control input {
+    font-size: 12px;
+    min-height: 40px;
+  }
+  .toggle-label {
+    font-size: 11px;
+  }
+  .control-help {
+    font-size: 11px;
+  }
+  .playback .button {
+    font-size: 12px;
+    min-height: 40px;
+    padding: 11px 16px;
+  }
+  .playback .icon-button {
+    height: 40px;
+    width: 40px;
+  }
+  .canvas-mode {
+    font-size: 10px;
+    margin-bottom: 23px;
+    gap: 6px;
+    line-height: 1.6;
+  }
+  .canvas-mode > span:last-child {
+    font-size: 8px;
+  }
+  .viz-heading > span:first-child {
+    font-size: 8px;
+    letter-spacing: 0.8px;
+  }
+  .viz-heading .tag {
+    font-size: 8px;
+    line-height: 1.6;
+  }
+  .plot {
+    min-height: 190px;
+  }
+  .metrics {
+    padding: 20px 0;
+    gap: 18px 15px;
+  }
+  .metrics strong {
+    font-size: 21px;
+  }
+  .metrics span {
+    font-size: 10px;
+    min-height: 0;
+  }
+  .loss-chart {
+    height: 90px;
+  }
+  .plot-legend {
+    font-size: 10px;
+    gap: 15px;
+  }
+  .prediction-row {
+    gap: 6px;
+  }
+  .prediction > span {
+    font-size: 7px;
+  }
+  .prediction > strong {
+    font-size: 16px;
+  }
+  .prediction small {
+    font-size: 6px;
+  }
+  .pipeline-strip {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+  }
+  .pipeline-strip span {
+    font-size: 10px;
+  }
+  .pipeline-strip strong {
+    font-size: 24px;
+  }
+  .retrieval-list > article > div {
+    font-size: 10px;
+  }
+  .retrieval-list p {
+    font-size: 12px;
+  }
+  .token {
+    font-size: 11px;
+  }
+  .token small {
+    font-size: 9px;
+  }
+  .attention-matrix button {
+    font-size: 8px;
+    min-height: 30px;
+  }
+  .attention-labels > button {
+    font-size: 9px;
+  }
+  .attention-labels {
+    width: 60px;
+  }
+  .prob-bars {
+    padding: 20px 0;
+  }
+  .prob-bars > div > span {
+    font-size: 11px;
+    width: 80px;
+  }
+  .prob-bars > div > strong {
+    font-size: 10px;
+    width: 40px;
+  }
+  .bar-track {
+    height: 23px;
+  }
+  .matrix span {
+    font-size: 8px;
+  }
+  .matrix-wrap > .eyebrow {
+    font-size: 7px;
+  }
+  .output-vector {
+    font-size: 10px;
+    flex-wrap: wrap;
+  }
+  .agent-stage {
+    flex: 1 1 80px;
+  }
+  .agent-stage strong {
+    font-size: 11px;
+  }
+  .agent-stage .eyebrow {
+    font-size: 8px;
+  }
+  .agent-state {
+    font-size: 12px;
+  }
+  .agent-state p {
+    font-size: 11px;
+  }
+  .q-grid {
+    max-width: 340px;
+  }
+  .q-grid button small {
+    font-size: 8px;
+  }
+  .q-grid button strong {
+    font-size: 22px;
+  }
+  .system-flow > div {
+    padding: 16px 8px;
+  }
+  .system-flow > div strong {
+    font-size: 10px;
+  }
+  .system-flow > div small {
+    font-size: 8px;
+  }
+  .capacity-panel p {
+    font-size: 11px;
+  }
+  .lab-note {
+    font-size: 10px;
+  }
+  .below-lab p {
+    font-size: 12px;
+  }
+  .document-editor summary {
+    font-size: 12px;
+  }
+  .document-editor summary span {
+    font-size: 10px;
+  }
+  .document-editor textarea {
+    font-size: 12px;
+  }
+  .parameter-inspector summary {
+    font-size: 11px;
+  }
+  .parameter-table table {
+    font-size: 9px;
+  }
+  .detailed-lesson {
+    width: 100%;
+  }
+  .lesson-cover {
+    padding: 25px 23px;
+  }
+  .lesson-cover h2 {
+    font-size: 31px;
+    line-height: 1.3;
+    margin: 14px 0 17px;
+  }
+  .lesson-cover > p {
+    font-size: 15px;
+    line-height: 1.9;
+  }
+  .learning-objectives {
+    padding: 18px;
+    margin-top: 22px;
+  }
+  .learning-objectives h3 {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .learning-objectives ul {
+    font-size: 12px;
+    line-height: 1.9;
+  }
+  .learning-objectives li {
+    margin-top: 6px;
+  }
+  .lesson-reading-layout {
+    padding-top: 25px;
+  }
+  .lesson-toc {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .lesson-toc > a {
+    font-size: 12px;
+  }
+  .lesson-toc .button {
+    font-size: 11px;
+  }
+  .lesson-body h3 {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .lesson-body p {
+    font-size: 14px;
+    line-height: 1.95;
+  }
+  .lesson-body > section {
+    margin-bottom: 30px;
+  }
+  .lesson-body .formula {
+    font-size: 12px;
+    padding: 19px 17px;
+    overflow-wrap: anywhere;
+  }
+  .lesson-body .lesson-flow-intro {
+    padding: 22px;
+  }
+  .worked-example {
+    padding: 23px;
+  }
+  .worked-example ol {
+    font-size: 13px;
+    line-height: 1.9;
+    padding-left: 20px;
+  }
+  .lesson-body .lesson-failure p {
+    font-size: 13px;
+  }
+  .lesson-references > a {
+    font-size: 12px;
+    display: block;
+  }
+  .lesson-references > a small {
+    display: block;
+    margin-top: 6px;
+    font-size: 10px;
+  }
+  .lesson-next {
+    display: block;
+  }
+  .lesson-next .button {
+    margin-top: 18px;
+    width: 100%;
+  }
+  .lesson-cover .eyebrow {
+    font-size: 9px;
+  }
+  .knowledge-check {
+    padding: 26px 22px;
+  }
+  .knowledge-check h2 {
+    font-size: 23px;
+  }
+  .answer-options label {
+    font-size: 13px;
+    padding: 18px;
+  }
+  .site-footer {
+    font-size: 9px;
+    line-height: 1.9;
+  }
+  .path-banner h2 {
+    font-size: 21px;
+  }
+  .path-banner p {
+    font-size: 12px;
+  }
+  .global-search {
+    max-width: 155px;
+  }
+  .global-search input {
+    font-size: 11px;
+  }
+  .breadcrumb {
+    font-size: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .starter-steps > button:hover {
+    transform: none;
+  }
+}
+/* Put playback above parameters so a learner can pause before touching a slider. */
+.lab-grid > .controls-panel {
+  display: flex;
+  flex-direction: column;
+}
+.controls-panel > .panel-heading {
+  order: -2;
+}
+.controls-panel > .playback {
+  order: -1;
+  margin: 0 0 25px;
+}
+.point-editor {
+  margin-top: 15px;
+  border-top: 1px solid var(--line);
+  padding-top: 17px;
+}
+.point-editor summary {
+  font-size: 12px;
+  cursor: pointer;
+  line-height: 1.6;
+}
+.point-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 15px 0;
+}
+.point-inputs label {
+  display: grid;
+  gap: 7px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.point-inputs input {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  padding: 9px;
+  border-radius: 5px;
+  font:
+    12px ui-monospace,
+    monospace;
+  min-width: 0;
+}
+.point-editor .button {
+  font-size: 11px;
+}
+@media (max-width: 700px) {
+  .lab-grid > .controls-panel,
+  .lab-grid.with-guide > .controls-panel {
+    display: grid;
+  }
+  .controls-panel > .point-editor {
+    grid-column: 1/-1;
+  }
+  .controls-panel > .playback {
+    margin-bottom: 12px;
+  }
+}
+:root {
+  --plot-positive: #315b46;
+  --plot-negative: #9b91bb;
+  --plot-point: #7f9e8a;
+}
+[data-theme="dark"] {
+  --plot-positive: #b5d698;
+  --plot-negative: #c3a8e1;
+  --plot-point: #a7c8b7;
+}

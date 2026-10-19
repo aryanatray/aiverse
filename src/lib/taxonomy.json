@@ -1,0 +1,1440 @@
+[
+  {
+    "id": 1,
+    "title": "Mathematics for AI",
+    "topics": [
+      {
+        "id": "d1-scalars-vectors-matrices-and-tensors",
+        "title": "Scalars, vectors, matrices, and tensors"
+      },
+      {
+        "id": "d1-vector-spaces",
+        "title": "Vector spaces"
+      },
+      {
+        "id": "d1-matrix-operations",
+        "title": "Matrix operations"
+      },
+      {
+        "id": "d1-linear-transformations",
+        "title": "Linear transformations"
+      },
+      {
+        "id": "d1-dot-products",
+        "title": "Dot products"
+      },
+      {
+        "id": "d1-matrix-multiplication",
+        "title": "Matrix multiplication"
+      },
+      {
+        "id": "d1-eigenvalues-and-eigenvectors",
+        "title": "Eigenvalues and eigenvectors"
+      },
+      {
+        "id": "d1-singular-value-decomposition",
+        "title": "Singular Value Decomposition"
+      },
+      {
+        "id": "d1-calculus",
+        "title": "Calculus"
+      },
+      {
+        "id": "d1-derivatives",
+        "title": "Derivatives"
+      },
+      {
+        "id": "d1-partial-derivatives",
+        "title": "Partial derivatives"
+      },
+      {
+        "id": "d1-chain-rule",
+        "title": "Chain rule"
+      },
+      {
+        "id": "d1-gradients",
+        "title": "Gradients"
+      },
+      {
+        "id": "d1-jacobians",
+        "title": "Jacobians"
+      },
+      {
+        "id": "d1-hessians",
+        "title": "Hessians"
+      },
+      {
+        "id": "d1-probability",
+        "title": "Probability"
+      },
+      {
+        "id": "d1-conditional-probability",
+        "title": "Conditional probability"
+      },
+      {
+        "id": "d1-bayes-theorem",
+        "title": "Bayes' theorem"
+      },
+      {
+        "id": "d1-probability-distributions",
+        "title": "Probability distributions"
+      },
+      {
+        "id": "d1-statistics",
+        "title": "Statistics"
+      },
+      {
+        "id": "d1-hypothesis-testing",
+        "title": "Hypothesis testing"
+      },
+      {
+        "id": "d1-optimization",
+        "title": "Optimization"
+      },
+      {
+        "id": "d1-convexity",
+        "title": "Convexity"
+      },
+      {
+        "id": "d1-gradient-descent",
+        "title": "Gradient descent"
+      },
+      {
+        "id": "d1-information-theory",
+        "title": "Information theory"
+      },
+      {
+        "id": "d1-entropy",
+        "title": "Entropy"
+      },
+      {
+        "id": "d1-cross-entropy",
+        "title": "Cross-entropy"
+      },
+      {
+        "id": "d1-kl-divergence",
+        "title": "KL divergence"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Machine Learning Fundamentals",
+    "topics": [
+      {
+        "id": "d2-supervised-learning",
+        "title": "Supervised learning"
+      },
+      {
+        "id": "d2-unsupervised-learning",
+        "title": "Unsupervised learning"
+      },
+      {
+        "id": "d2-semi-supervised-learning",
+        "title": "Semi-supervised learning"
+      },
+      {
+        "id": "d2-self-supervised-learning",
+        "title": "Self-supervised learning"
+      },
+      {
+        "id": "d2-feature-engineering",
+        "title": "Feature engineering"
+      },
+      {
+        "id": "d2-data-preprocessing",
+        "title": "Data preprocessing"
+      },
+      {
+        "id": "d2-missing-values",
+        "title": "Missing values"
+      },
+      {
+        "id": "d2-data-splitting",
+        "title": "Data splitting"
+      },
+      {
+        "id": "d2-cross-validation",
+        "title": "Cross-validation"
+      },
+      {
+        "id": "d2-data-leakage",
+        "title": "Data leakage"
+      },
+      {
+        "id": "d2-overfitting-and-underfitting",
+        "title": "Overfitting and underfitting"
+      },
+      {
+        "id": "d2-bias-variance-tradeoff",
+        "title": "Bias-variance tradeoff"
+      },
+      {
+        "id": "d2-linear-regression",
+        "title": "Linear regression"
+      },
+      {
+        "id": "d2-polynomial-regression",
+        "title": "Polynomial regression"
+      },
+      {
+        "id": "d2-logistic-regression",
+        "title": "Logistic regression"
+      },
+      {
+        "id": "d2-knn",
+        "title": "KNN"
+      },
+      {
+        "id": "d2-naive-bayes",
+        "title": "Naive Bayes"
+      },
+      {
+        "id": "d2-decision-trees",
+        "title": "Decision trees"
+      },
+      {
+        "id": "d2-random-forests",
+        "title": "Random forests"
+      },
+      {
+        "id": "d2-svm",
+        "title": "SVM"
+      },
+      {
+        "id": "d2-gradient-boosting",
+        "title": "Gradient boosting"
+      },
+      {
+        "id": "d2-xgboost",
+        "title": "XGBoost"
+      },
+      {
+        "id": "d2-lightgbm",
+        "title": "LightGBM"
+      },
+      {
+        "id": "d2-catboost",
+        "title": "CatBoost"
+      },
+      {
+        "id": "d2-k-means",
+        "title": "K-Means"
+      },
+      {
+        "id": "d2-dbscan",
+        "title": "DBSCAN"
+      },
+      {
+        "id": "d2-hierarchical-clustering",
+        "title": "Hierarchical clustering"
+      },
+      {
+        "id": "d2-gaussian-mixtures",
+        "title": "Gaussian mixtures"
+      },
+      {
+        "id": "d2-pca",
+        "title": "PCA"
+      },
+      {
+        "id": "d2-t-sne",
+        "title": "t-SNE"
+      },
+      {
+        "id": "d2-umap",
+        "title": "UMAP"
+      },
+      {
+        "id": "d2-anomaly-detection",
+        "title": "Anomaly detection"
+      },
+      {
+        "id": "d2-model-evaluation",
+        "title": "Model evaluation"
+      },
+      {
+        "id": "d2-hyperparameter-optimization",
+        "title": "Hyperparameter optimization"
+      },
+      {
+        "id": "d2-calibration",
+        "title": "Calibration"
+      },
+      {
+        "id": "d2-class-imbalance",
+        "title": "Class imbalance"
+      },
+      {
+        "id": "d2-model-interpretability",
+        "title": "Model interpretability"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Deep Learning",
+    "topics": [
+      {
+        "id": "d3-perceptrons",
+        "title": "Perceptrons"
+      },
+      {
+        "id": "d3-artificial-neural-networks",
+        "title": "Artificial neural networks"
+      },
+      {
+        "id": "d3-multilayer-perceptrons",
+        "title": "Multilayer perceptrons"
+      },
+      {
+        "id": "d3-activation-functions",
+        "title": "Activation functions"
+      },
+      {
+        "id": "d3-forward-propagation",
+        "title": "Forward propagation"
+      },
+      {
+        "id": "d3-backpropagation",
+        "title": "Backpropagation"
+      },
+      {
+        "id": "d3-loss-functions",
+        "title": "Loss functions"
+      },
+      {
+        "id": "d3-gradient-descent",
+        "title": "Gradient descent"
+      },
+      {
+        "id": "d3-sgd",
+        "title": "SGD"
+      },
+      {
+        "id": "d3-momentum",
+        "title": "Momentum"
+      },
+      {
+        "id": "d3-rmsprop",
+        "title": "RMSProp"
+      },
+      {
+        "id": "d3-adam",
+        "title": "Adam"
+      },
+      {
+        "id": "d3-weight-initialization",
+        "title": "Weight initialization"
+      },
+      {
+        "id": "d3-batch-normalization",
+        "title": "Batch normalization"
+      },
+      {
+        "id": "d3-layer-normalization",
+        "title": "Layer normalization"
+      },
+      {
+        "id": "d3-dropout",
+        "title": "Dropout"
+      },
+      {
+        "id": "d3-regularization",
+        "title": "Regularization"
+      },
+      {
+        "id": "d3-vanishing-and-exploding-gradients",
+        "title": "Vanishing and exploding gradients"
+      },
+      {
+        "id": "d3-learning-rate-scheduling",
+        "title": "Learning-rate scheduling"
+      },
+      {
+        "id": "d3-cnns",
+        "title": "CNNs"
+      },
+      {
+        "id": "d3-rnns",
+        "title": "RNNs"
+      },
+      {
+        "id": "d3-lstms",
+        "title": "LSTMs"
+      },
+      {
+        "id": "d3-grus",
+        "title": "GRUs"
+      },
+      {
+        "id": "d3-autoencoders",
+        "title": "Autoencoders"
+      },
+      {
+        "id": "d3-vaes",
+        "title": "VAEs"
+      },
+      {
+        "id": "d3-gans",
+        "title": "GANs"
+      },
+      {
+        "id": "d3-transformers",
+        "title": "Transformers"
+      },
+      {
+        "id": "d3-vision-transformers",
+        "title": "Vision Transformers"
+      },
+      {
+        "id": "d3-graph-neural-networks",
+        "title": "Graph Neural Networks"
+      },
+      {
+        "id": "d3-diffusion-models",
+        "title": "Diffusion models"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Natural Language Processing",
+    "topics": [
+      {
+        "id": "d4-text-preprocessing",
+        "title": "Text preprocessing"
+      },
+      {
+        "id": "d4-tokenization",
+        "title": "Tokenization"
+      },
+      {
+        "id": "d4-bag-of-words",
+        "title": "Bag of Words"
+      },
+      {
+        "id": "d4-tf-idf",
+        "title": "TF-IDF"
+      },
+      {
+        "id": "d4-word-embeddings",
+        "title": "Word embeddings"
+      },
+      {
+        "id": "d4-word2vec",
+        "title": "Word2Vec"
+      },
+      {
+        "id": "d4-glove",
+        "title": "GloVe"
+      },
+      {
+        "id": "d4-sequence-modeling",
+        "title": "Sequence modeling"
+      },
+      {
+        "id": "d4-language-modeling",
+        "title": "Language modeling"
+      },
+      {
+        "id": "d4-attention",
+        "title": "Attention"
+      },
+      {
+        "id": "d4-self-attention",
+        "title": "Self-attention"
+      },
+      {
+        "id": "d4-multi-head-attention",
+        "title": "Multi-head attention"
+      },
+      {
+        "id": "d4-positional-encoding",
+        "title": "Positional encoding"
+      },
+      {
+        "id": "d4-encoder-decoder-architectures",
+        "title": "Encoder-decoder architectures"
+      },
+      {
+        "id": "d4-transformer-architectures",
+        "title": "Transformer architectures"
+      },
+      {
+        "id": "d4-semantic-similarity",
+        "title": "Semantic similarity"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Generative AI and Large Language Models",
+    "topics": [
+      {
+        "id": "d5-generative-modeling",
+        "title": "Generative modeling"
+      },
+      {
+        "id": "d5-autoregressive-language-modeling",
+        "title": "Autoregressive language modeling"
+      },
+      {
+        "id": "d5-transformer-internals",
+        "title": "Transformer internals"
+      },
+      {
+        "id": "d5-tokenization",
+        "title": "Tokenization"
+      },
+      {
+        "id": "d5-embeddings",
+        "title": "Embeddings"
+      },
+      {
+        "id": "d5-attention-matrices",
+        "title": "Attention matrices"
+      },
+      {
+        "id": "d5-kv-caching",
+        "title": "KV caching"
+      },
+      {
+        "id": "d5-context-windows",
+        "title": "Context windows"
+      },
+      {
+        "id": "d5-decoding",
+        "title": "Decoding"
+      },
+      {
+        "id": "d5-temperature",
+        "title": "Temperature"
+      },
+      {
+        "id": "d5-top-k",
+        "title": "Top-K"
+      },
+      {
+        "id": "d5-top-p",
+        "title": "Top-P"
+      },
+      {
+        "id": "d5-beam-search",
+        "title": "Beam search"
+      },
+      {
+        "id": "d5-pretraining",
+        "title": "Pretraining"
+      },
+      {
+        "id": "d5-instruction-tuning",
+        "title": "Instruction tuning"
+      },
+      {
+        "id": "d5-supervised-fine-tuning",
+        "title": "Supervised fine-tuning"
+      },
+      {
+        "id": "d5-rlhf",
+        "title": "RLHF"
+      },
+      {
+        "id": "d5-dpo",
+        "title": "DPO"
+      },
+      {
+        "id": "d5-peft",
+        "title": "PEFT"
+      },
+      {
+        "id": "d5-lora",
+        "title": "LoRA"
+      },
+      {
+        "id": "d5-qlora",
+        "title": "QLoRA"
+      },
+      {
+        "id": "d5-quantization",
+        "title": "Quantization"
+      },
+      {
+        "id": "d5-distillation",
+        "title": "Distillation"
+      },
+      {
+        "id": "d5-model-inference",
+        "title": "Model inference"
+      },
+      {
+        "id": "d5-model-serving",
+        "title": "Model serving"
+      },
+      {
+        "id": "d5-batching",
+        "title": "Batching"
+      },
+      {
+        "id": "d5-prefill-and-decoding",
+        "title": "Prefill and decoding"
+      },
+      {
+        "id": "d5-throughput",
+        "title": "Throughput"
+      },
+      {
+        "id": "d5-latency",
+        "title": "Latency"
+      },
+      {
+        "id": "d5-evaluation",
+        "title": "Evaluation"
+      },
+      {
+        "id": "d5-multimodal-llms",
+        "title": "Multimodal LLMs"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Retrieval-Augmented Generation",
+    "topics": [
+      {
+        "id": "d6-rag-fundamentals",
+        "title": "RAG fundamentals"
+      },
+      {
+        "id": "d6-document-ingestion",
+        "title": "Document ingestion"
+      },
+      {
+        "id": "d6-document-parsing",
+        "title": "Document parsing"
+      },
+      {
+        "id": "d6-chunking-strategies",
+        "title": "Chunking strategies"
+      },
+      {
+        "id": "d6-embeddings",
+        "title": "Embeddings"
+      },
+      {
+        "id": "d6-vector-similarity",
+        "title": "Vector similarity"
+      },
+      {
+        "id": "d6-cosine-similarity",
+        "title": "Cosine similarity"
+      },
+      {
+        "id": "d6-vector-indexes",
+        "title": "Vector indexes"
+      },
+      {
+        "id": "d6-hnsw",
+        "title": "HNSW"
+      },
+      {
+        "id": "d6-ivf",
+        "title": "IVF"
+      },
+      {
+        "id": "d6-sparse-retrieval",
+        "title": "Sparse retrieval"
+      },
+      {
+        "id": "d6-bm25",
+        "title": "BM25"
+      },
+      {
+        "id": "d6-dense-retrieval",
+        "title": "Dense retrieval"
+      },
+      {
+        "id": "d6-hybrid-retrieval",
+        "title": "Hybrid retrieval"
+      },
+      {
+        "id": "d6-metadata-filtering",
+        "title": "Metadata filtering"
+      },
+      {
+        "id": "d6-reranking",
+        "title": "Reranking"
+      },
+      {
+        "id": "d6-context-construction",
+        "title": "Context construction"
+      },
+      {
+        "id": "d6-grounding",
+        "title": "Grounding"
+      },
+      {
+        "id": "d6-retrieval-evaluation",
+        "title": "Retrieval evaluation"
+      },
+      {
+        "id": "d6-recall-k",
+        "title": "Recall@K"
+      },
+      {
+        "id": "d6-precision-k",
+        "title": "Precision@K"
+      },
+      {
+        "id": "d6-mrr",
+        "title": "MRR"
+      },
+      {
+        "id": "d6-ndcg",
+        "title": "NDCG"
+      },
+      {
+        "id": "d6-faithfulness",
+        "title": "Faithfulness"
+      },
+      {
+        "id": "d6-advanced-rag",
+        "title": "Advanced RAG"
+      },
+      {
+        "id": "d6-agentic-rag",
+        "title": "Agentic RAG"
+      },
+      {
+        "id": "d6-graph-rag",
+        "title": "Graph RAG"
+      },
+      {
+        "id": "d6-retrieval-latency",
+        "title": "Retrieval latency"
+      },
+      {
+        "id": "d6-caching",
+        "title": "Caching"
+      },
+      {
+        "id": "d6-rag-security",
+        "title": "RAG security"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "AI Agents",
+    "topics": [
+      {
+        "id": "d7-agent-fundamentals",
+        "title": "Agent fundamentals"
+      },
+      {
+        "id": "d7-agents-vs-workflows",
+        "title": "Agents vs workflows"
+      },
+      {
+        "id": "d7-tool-calling",
+        "title": "Tool calling"
+      },
+      {
+        "id": "d7-function-calling",
+        "title": "Function calling"
+      },
+      {
+        "id": "d7-structured-outputs",
+        "title": "Structured outputs"
+      },
+      {
+        "id": "d7-agent-state",
+        "title": "Agent state"
+      },
+      {
+        "id": "d7-agent-memory",
+        "title": "Agent memory"
+      },
+      {
+        "id": "d7-planning",
+        "title": "Planning"
+      },
+      {
+        "id": "d7-reasoning-patterns",
+        "title": "Reasoning patterns"
+      },
+      {
+        "id": "d7-react",
+        "title": "ReAct"
+      },
+      {
+        "id": "d7-plan-and-execute",
+        "title": "Plan-and-Execute"
+      },
+      {
+        "id": "d7-reflection",
+        "title": "Reflection"
+      },
+      {
+        "id": "d7-self-correction",
+        "title": "Self-correction"
+      },
+      {
+        "id": "d7-router-agents",
+        "title": "Router agents"
+      },
+      {
+        "id": "d7-supervisor-agents",
+        "title": "Supervisor agents"
+      },
+      {
+        "id": "d7-multi-agent-collaboration",
+        "title": "Multi-agent collaboration"
+      },
+      {
+        "id": "d7-hierarchical-agents",
+        "title": "Hierarchical agents"
+      },
+      {
+        "id": "d7-parallel-agents",
+        "title": "Parallel agents"
+      },
+      {
+        "id": "d7-agent-communication",
+        "title": "Agent communication"
+      },
+      {
+        "id": "d7-tool-selection",
+        "title": "Tool selection"
+      },
+      {
+        "id": "d7-error-recovery",
+        "title": "Error recovery"
+      },
+      {
+        "id": "d7-retries",
+        "title": "Retries"
+      },
+      {
+        "id": "d7-timeouts",
+        "title": "Timeouts"
+      },
+      {
+        "id": "d7-checkpointing",
+        "title": "Checkpointing"
+      },
+      {
+        "id": "d7-human-approval",
+        "title": "Human approval"
+      },
+      {
+        "id": "d7-agent-evaluation",
+        "title": "Agent evaluation"
+      },
+      {
+        "id": "d7-tracing",
+        "title": "Tracing"
+      },
+      {
+        "id": "d7-observability",
+        "title": "Observability"
+      },
+      {
+        "id": "d7-agent-security",
+        "title": "Agent security"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Agentic Frameworks",
+    "topics": [
+      {
+        "id": "d8-langchain",
+        "title": "LangChain"
+      },
+      {
+        "id": "d8-langgraph",
+        "title": "LangGraph"
+      },
+      {
+        "id": "d8-crewai",
+        "title": "CrewAI"
+      },
+      {
+        "id": "d8-autogen",
+        "title": "AutoGen"
+      },
+      {
+        "id": "d8-openai-agents-sdk",
+        "title": "OpenAI Agents SDK"
+      },
+      {
+        "id": "d8-llamaindex",
+        "title": "LlamaIndex"
+      },
+      {
+        "id": "d8-semantic-kernel",
+        "title": "Semantic Kernel"
+      },
+      {
+        "id": "d8-pydanticai",
+        "title": "PydanticAI"
+      },
+      {
+        "id": "d8-n8n",
+        "title": "n8n"
+      },
+      {
+        "id": "d8-mcp",
+        "title": "MCP"
+      },
+      {
+        "id": "d8-a2a",
+        "title": "A2A"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Computer Vision",
+    "topics": [
+      {
+        "id": "d9-image-representation",
+        "title": "Image representation"
+      },
+      {
+        "id": "d9-pixel-operations",
+        "title": "Pixel operations"
+      },
+      {
+        "id": "d9-image-transformations",
+        "title": "Image transformations"
+      },
+      {
+        "id": "d9-filters",
+        "title": "Filters"
+      },
+      {
+        "id": "d9-convolution",
+        "title": "Convolution"
+      },
+      {
+        "id": "d9-edge-detection",
+        "title": "Edge detection"
+      },
+      {
+        "id": "d9-pooling",
+        "title": "Pooling"
+      },
+      {
+        "id": "d9-cnns",
+        "title": "CNNs"
+      },
+      {
+        "id": "d9-classification",
+        "title": "Classification"
+      },
+      {
+        "id": "d9-object-detection",
+        "title": "Object detection"
+      },
+      {
+        "id": "d9-segmentation",
+        "title": "Segmentation"
+      },
+      {
+        "id": "d9-transfer-learning",
+        "title": "Transfer learning"
+      },
+      {
+        "id": "d9-vision-transformers",
+        "title": "Vision Transformers"
+      },
+      {
+        "id": "d9-ocr",
+        "title": "OCR"
+      },
+      {
+        "id": "d9-pose-estimation",
+        "title": "Pose estimation"
+      },
+      {
+        "id": "d9-image-embeddings",
+        "title": "Image embeddings"
+      },
+      {
+        "id": "d9-generative-vision-models",
+        "title": "Generative vision models"
+      },
+      {
+        "id": "d9-diffusion",
+        "title": "Diffusion"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Reinforcement Learning",
+    "topics": [
+      {
+        "id": "d10-states",
+        "title": "States"
+      },
+      {
+        "id": "d10-actions",
+        "title": "Actions"
+      },
+      {
+        "id": "d10-rewards",
+        "title": "Rewards"
+      },
+      {
+        "id": "d10-policies",
+        "title": "Policies"
+      },
+      {
+        "id": "d10-markov-decision-processes",
+        "title": "Markov Decision Processes"
+      },
+      {
+        "id": "d10-bellman-equations",
+        "title": "Bellman equations"
+      },
+      {
+        "id": "d10-q-learning",
+        "title": "Q-learning"
+      },
+      {
+        "id": "d10-sarsa",
+        "title": "SARSA"
+      },
+      {
+        "id": "d10-temporal-difference-learning",
+        "title": "Temporal Difference Learning"
+      },
+      {
+        "id": "d10-dqn",
+        "title": "DQN"
+      },
+      {
+        "id": "d10-policy-gradients",
+        "title": "Policy gradients"
+      },
+      {
+        "id": "d10-actor-critic",
+        "title": "Actor-Critic"
+      },
+      {
+        "id": "d10-ppo",
+        "title": "PPO"
+      },
+      {
+        "id": "d10-exploration-vs-exploitation",
+        "title": "Exploration vs exploitation"
+      },
+      {
+        "id": "d10-multi-agent-rl",
+        "title": "Multi-agent RL"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "MLOps, LLMOps, and AgentOps",
+    "topics": [
+      {
+        "id": "d11-experiment-tracking",
+        "title": "Experiment tracking"
+      },
+      {
+        "id": "d11-reproducibility",
+        "title": "Reproducibility"
+      },
+      {
+        "id": "d11-data-versioning",
+        "title": "Data versioning"
+      },
+      {
+        "id": "d11-model-versioning",
+        "title": "Model versioning"
+      },
+      {
+        "id": "d11-feature-stores",
+        "title": "Feature stores"
+      },
+      {
+        "id": "d11-training-pipelines",
+        "title": "Training pipelines"
+      },
+      {
+        "id": "d11-ci-cd",
+        "title": "CI/CD"
+      },
+      {
+        "id": "d11-model-deployment",
+        "title": "Model deployment"
+      },
+      {
+        "id": "d11-model-registries",
+        "title": "Model registries"
+      },
+      {
+        "id": "d11-drift-detection",
+        "title": "Drift detection"
+      },
+      {
+        "id": "d11-model-monitoring",
+        "title": "Model monitoring"
+      },
+      {
+        "id": "d11-prompt-management",
+        "title": "Prompt management"
+      },
+      {
+        "id": "d11-llm-evaluation",
+        "title": "LLM evaluation"
+      },
+      {
+        "id": "d11-observability",
+        "title": "Observability"
+      },
+      {
+        "id": "d11-tracing",
+        "title": "Tracing"
+      },
+      {
+        "id": "d11-cost-optimization",
+        "title": "Cost optimization"
+      },
+      {
+        "id": "d11-latency-optimization",
+        "title": "Latency optimization"
+      },
+      {
+        "id": "d11-caching",
+        "title": "Caching"
+      },
+      {
+        "id": "d11-model-routing",
+        "title": "Model routing"
+      },
+      {
+        "id": "d11-agent-monitoring",
+        "title": "Agent monitoring"
+      },
+      {
+        "id": "d11-tool-reliability",
+        "title": "Tool reliability"
+      },
+      {
+        "id": "d11-production-debugging",
+        "title": "Production debugging"
+      },
+      {
+        "id": "d11-rollbacks",
+        "title": "Rollbacks"
+      },
+      {
+        "id": "d11-safety-evaluation",
+        "title": "Safety evaluation"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Data Engineering for AI",
+    "topics": [
+      {
+        "id": "d12-relational-databases",
+        "title": "Relational databases"
+      },
+      {
+        "id": "d12-data-modeling",
+        "title": "Data modeling"
+      },
+      {
+        "id": "d12-oltp-vs-olap",
+        "title": "OLTP vs OLAP"
+      },
+      {
+        "id": "d12-dimensional-modeling",
+        "title": "Dimensional modeling"
+      },
+      {
+        "id": "d12-star-schemas",
+        "title": "Star schemas"
+      },
+      {
+        "id": "d12-snowflake-schemas",
+        "title": "Snowflake schemas"
+      },
+      {
+        "id": "d12-etl-and-elt",
+        "title": "ETL and ELT"
+      },
+      {
+        "id": "d12-batch-processing",
+        "title": "Batch processing"
+      },
+      {
+        "id": "d12-streaming",
+        "title": "Streaming"
+      },
+      {
+        "id": "d12-data-lakes",
+        "title": "Data lakes"
+      },
+      {
+        "id": "d12-warehouses",
+        "title": "Warehouses"
+      },
+      {
+        "id": "d12-lakehouses",
+        "title": "Lakehouses"
+      },
+      {
+        "id": "d12-medallion-architecture",
+        "title": "Medallion architecture"
+      },
+      {
+        "id": "d12-bronze-silver-and-gold-layers",
+        "title": "Bronze, Silver, and Gold layers"
+      },
+      {
+        "id": "d12-data-quality",
+        "title": "Data quality"
+      },
+      {
+        "id": "d12-data-lineage",
+        "title": "Data lineage"
+      },
+      {
+        "id": "d12-cdc",
+        "title": "CDC"
+      },
+      {
+        "id": "d12-scd",
+        "title": "SCD"
+      },
+      {
+        "id": "d12-data-orchestration",
+        "title": "Data orchestration"
+      },
+      {
+        "id": "d12-feature-pipelines",
+        "title": "Feature pipelines"
+      },
+      {
+        "id": "d12-vector-databases",
+        "title": "Vector databases"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Responsible AI and Security",
+    "topics": [
+      {
+        "id": "d13-bias-and-fairness",
+        "title": "Bias and fairness"
+      },
+      {
+        "id": "d13-explainability",
+        "title": "Explainability"
+      },
+      {
+        "id": "d13-shap",
+        "title": "SHAP"
+      },
+      {
+        "id": "d13-lime",
+        "title": "LIME"
+      },
+      {
+        "id": "d13-privacy",
+        "title": "Privacy"
+      },
+      {
+        "id": "d13-differential-privacy",
+        "title": "Differential privacy"
+      },
+      {
+        "id": "d13-federated-learning",
+        "title": "Federated learning"
+      },
+      {
+        "id": "d13-adversarial-attacks",
+        "title": "Adversarial attacks"
+      },
+      {
+        "id": "d13-data-poisoning",
+        "title": "Data poisoning"
+      },
+      {
+        "id": "d13-prompt-injection",
+        "title": "Prompt injection"
+      },
+      {
+        "id": "d13-tool-output-injection",
+        "title": "Tool-output injection"
+      },
+      {
+        "id": "d13-model-security",
+        "title": "Model security"
+      },
+      {
+        "id": "d13-agent-sandboxing",
+        "title": "Agent sandboxing"
+      },
+      {
+        "id": "d13-permissions",
+        "title": "Permissions"
+      },
+      {
+        "id": "d13-human-oversight",
+        "title": "Human oversight"
+      },
+      {
+        "id": "d13-secure-deployment",
+        "title": "Secure deployment"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Advanced AI Research",
+    "topics": [
+      {
+        "id": "d14-mixture-of-experts",
+        "title": "Mixture of Experts"
+      },
+      {
+        "id": "d14-sparse-attention",
+        "title": "Sparse attention"
+      },
+      {
+        "id": "d14-state-space-models",
+        "title": "State space models"
+      },
+      {
+        "id": "d14-mamba-style-architectures",
+        "title": "Mamba-style architectures"
+      },
+      {
+        "id": "d14-test-time-computation",
+        "title": "Test-time computation"
+      },
+      {
+        "id": "d14-model-distillation",
+        "title": "Model distillation"
+      },
+      {
+        "id": "d14-self-supervised-learning",
+        "title": "Self-supervised learning"
+      },
+      {
+        "id": "d14-contrastive-learning",
+        "title": "Contrastive learning"
+      },
+      {
+        "id": "d14-world-models",
+        "title": "World models"
+      },
+      {
+        "id": "d14-multimodal-learning",
+        "title": "Multimodal learning"
+      },
+      {
+        "id": "d14-continual-learning",
+        "title": "Continual learning"
+      },
+      {
+        "id": "d14-meta-learning",
+        "title": "Meta-learning"
+      },
+      {
+        "id": "d14-bayesian-deep-learning",
+        "title": "Bayesian deep learning"
+      },
+      {
+        "id": "d14-causal-inference",
+        "title": "Causal inference"
+      },
+      {
+        "id": "d14-neuro-symbolic-ai",
+        "title": "Neuro-symbolic AI"
+      },
+      {
+        "id": "d14-mechanistic-interpretability",
+        "title": "Mechanistic interpretability"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "AI System Design",
+    "topics": [
+      {
+        "id": "d15-recommendation-systems",
+        "title": "Recommendation systems"
+      },
+      {
+        "id": "d15-search-and-retrieval-systems",
+        "title": "Search and retrieval systems"
+      },
+      {
+        "id": "d15-enterprise-rag",
+        "title": "Enterprise RAG"
+      },
+      {
+        "id": "d15-multi-agent-systems",
+        "title": "Multi-agent systems"
+      },
+      {
+        "id": "d15-model-serving",
+        "title": "Model serving"
+      },
+      {
+        "id": "d15-real-time-inference",
+        "title": "Real-time inference"
+      },
+      {
+        "id": "d15-scalable-ml-architectures",
+        "title": "Scalable ML architectures"
+      },
+      {
+        "id": "d15-llm-application-architecture",
+        "title": "LLM application architecture"
+      },
+      {
+        "id": "d15-distributed-processing",
+        "title": "Distributed processing"
+      },
+      {
+        "id": "d15-observability",
+        "title": "Observability"
+      },
+      {
+        "id": "d15-latency-optimization",
+        "title": "Latency optimization"
+      },
+      {
+        "id": "d15-reliability",
+        "title": "Reliability"
+      },
+      {
+        "id": "d15-cost-optimization",
+        "title": "Cost optimization"
+      },
+      {
+        "id": "d15-security",
+        "title": "Security"
+      },
+      {
+        "id": "d15-data-quality",
+        "title": "Data quality"
+      }
+    ]
+  }
+]

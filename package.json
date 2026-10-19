@@ -1,0 +1,53 @@
+{
+  "name": "aiverse",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "preview": "vite preview --host 0.0.0.0",
+    "format": "prettier --write src tests scripts .github docs *.json *.ts *.mjs *.md",
+    "lint": "eslint src tests scripts vite.config.ts",
+    "check:examples": "node scripts/verify-examples.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "eslint": "9.37.0",
+    "jsdom": "^26.1.0",
+    "prettier": "3.6.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "8.46.2",
+    "vite": "^7.1.12",
+    "vitest": "^3.2.4"
+  },
+  "description": "Interactive AI learning laboratory with live visualizations and reproducible experiments.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aryanatray/aiverse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aryanatray/aiverse/issues"
+  },
+  "homepage": "https://github.com/aryanatray/aiverse#readme",
+  "keywords": [
+    "education",
+    "machine-learning",
+    "visualization",
+    "react",
+    "typescript"
+  ]
+}

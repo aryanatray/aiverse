@@ -1,0 +1,26 @@
+name: Bug report
+description: Report incorrect behavior or a calculation mismatch.
+title: "[Bug] "
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Include the laboratory, settings, and seed where relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and operating system
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Add a reference calculation or screenshot. Remove private document text and credentials.
